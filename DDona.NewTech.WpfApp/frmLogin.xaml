@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DDona.NewTech.WpfApp"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="300" WindowStartupLocation="CenterScreen" Background="#FFF">
+        Title="Login" Height="450" Width="300" WindowStartupLocation="CenterScreen" Background="#FFF" ResizeMode="NoResize">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -25,7 +25,7 @@
                         HorizontalAlignment="Right"
                         Margin="0,20,0,0">
                 <Button Style="{StaticResource btnLogin}" Margin="0,0,15,0" Click="Button_Click_1">Logar</Button>
-                <Button Style="{StaticResource btnLogin}">Sair</Button>
+                <Button Style="{StaticResource btnLogin}" Click="Button_Click">Sair</Button>
             </StackPanel>
         </StackPanel>
     </Grid>

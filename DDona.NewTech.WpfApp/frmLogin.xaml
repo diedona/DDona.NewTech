@@ -6,14 +6,6 @@
         xmlns:local="clr-namespace:DDona.NewTech.WpfApp"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="300" WindowStartupLocation="CenterScreen" Background="#FFF" ResizeMode="NoResize">
-    <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Resources/Styles/AppStyle.xaml">
-                </ResourceDictionary>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Window.Resources>
     <Grid Margin="10">
         <StackPanel Orientation="Vertical">
             <Image Source="/Resources/Images/login.png" Height="200"></Image>

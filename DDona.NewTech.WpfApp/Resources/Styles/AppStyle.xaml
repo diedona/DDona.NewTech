@@ -9,7 +9,35 @@
         <Setter Property="Height" Value="30"></Setter>
         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
     </Style>
-    <Style TargetType="{x:Type Button}" x:Key="btnLogin">
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="BorderBrush" Value="#CCC"></Setter>
+        <Setter Property="Background" Value="#DDD"></Setter>
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#4DCAE7"/>
+                <Setter Property="BorderBrush" Value="#66DCF7"></Setter>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#84DDF2"/>
+                <Setter Property="BorderBrush" Value="#A1E7F8"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!---->
+    
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}" x:Key="btnLogin">
         <Setter Property="Height" Value="25"></Setter>
         <Setter Property="Width" Value="80"></Setter>
     </Style>

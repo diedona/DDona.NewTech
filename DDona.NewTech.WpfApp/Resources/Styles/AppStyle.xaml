@@ -2,16 +2,19 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:DDona.NewTech.WpfApp.Resources.Styles">
     <Style TargetType="{x:Type TextBox}">
-        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="Height" Value="30"></Setter>        
         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        <Setter Property="Foreground" Value="#333"></Setter>
     </Style>
     <Style TargetType="{x:Type PasswordBox}">
         <Setter Property="Height" Value="30"></Setter>
         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        <Setter Property="Foreground" Value="#333"></Setter>
     </Style>
     <Style TargetType="{x:Type Button}">
         <Setter Property="BorderBrush" Value="#CCC"></Setter>
         <Setter Property="Background" Value="#DDD"></Setter>
+        <Setter Property="Foreground" Value="#222"></Setter>
         
         <Setter Property="Template">
             <Setter.Value>
@@ -27,7 +30,6 @@
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="#4DCAE7"/>
                 <Setter Property="BorderBrush" Value="#66DCF7"></Setter>
-                <Setter Property="Foreground" Value="#222"></Setter>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
                 <Setter Property="Background" Value="#84DDF2"/>

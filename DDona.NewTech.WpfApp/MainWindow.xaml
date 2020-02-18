@@ -5,29 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DDona.NewTech.WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="400" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="Menu" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <DockPanel Margin="5" LastChildFill="False">
-            <DockPanel DockPanel.Dock="Top" Margin="0,0,0,5">
-                <TextBlock Width="80" Margin="0,0,5,0" TextAlignment="Right">Nome:</TextBlock>
-                <TextBox>Digite seu nome</TextBox>
-            </DockPanel>
-            <DockPanel DockPanel.Dock="Top" Margin="0,0,0,5">
-                <TextBlock Width="80" Margin="0,0,5,0" TextAlignment="Right">E-mail:</TextBlock>
-                <TextBox>Digite seu E-mail</TextBox>
-            </DockPanel>
-            <DockPanel DockPanel.Dock="Top" Margin="0,0,0,5">
-                <TextBlock Width="80" Margin="0,0,5,0" TextAlignment="Right">Telefone:</TextBlock>
-                <TextBox>Digite seu telefone</TextBox>
-            </DockPanel>
-            <TextBlock Foreground="Red" Text="Mensagem de status" DockPanel.Dock="Bottom"/>
-            
-            <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
-                <Button Content="Cadastrar" Width="100"/>
-                <Button Margin="5,0,0,0" Content="Limpar campos"  Width="100" />
-                <Button Margin="5,0,0,0" Content="Cancelar"  Width="100" Click="Button_Click"/>
-            </DockPanel>            
-            
-        </DockPanel>
     </Grid>
 </Window>

@@ -6,6 +6,20 @@
         xmlns:local="clr-namespace:DDona.NewTech.WpfApp"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="7*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel x:Name="spMenu" 
+                    Orientation="Vertical" 
+                    Background="#CDC"
+                    Grid.Column="0">
+            <TextBlock Margin="5">Asd</TextBlock>
+            <TextBlock Margin="5">Asd</TextBlock>
+            <TextBlock Margin="5">Asd</TextBlock>
+        </StackPanel>
+        
     </Grid>
 </Window>

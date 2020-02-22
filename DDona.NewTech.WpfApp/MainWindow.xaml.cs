@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DDona.NewTech.WpfApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,28 @@ namespace DDona.NewTech.WpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private PessoaViewModel Pessoa;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Pessoa = new PessoaViewModel();
+            grdForm.DataContext = Pessoa;
+            txtNomeCompleto.Focus();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Pessoa.ToString());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Pessoa = new PessoaViewModel();
         }
     }
 }

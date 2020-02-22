@@ -34,5 +34,10 @@ namespace DDona.NewTech.WpfApp
         {
             this.Close();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtLogin.Focus();
+        }
     }
 }

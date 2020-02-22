@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -17,6 +19,7 @@ namespace DDona.NewTech.WpfApp
         {
             try
             {
+                Configure();
                 var frmLogin = new frmLogin();
                 if (frmLogin.ShowDialog().GetValueOrDefault())
                 {
@@ -28,6 +31,12 @@ namespace DDona.NewTech.WpfApp
             {
                 Shutdown();
             }
+        }
+
+        private void Configure()
+        {
+            CultureInfo.DefaultThreadCurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+            CultureInfo.DefaultThreadCurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
         }
     }
 }

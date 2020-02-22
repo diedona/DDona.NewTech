@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:DDona.NewTech.WpfApp"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:DateTimeConverter x:Key="DateTimeConverter" />
+    </Window.Resources>
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -56,8 +59,9 @@
 
                 <TextBlock Grid.Column="0" Grid.Row="3">Dt. Nascimento:</TextBlock>
                 <TextBox Grid.Column="0" 
-                         Text="{Binding DataNascimento, Mode=TwoWay}"
-                         Grid.Row="4"></TextBox>
+                         Text="{Binding DataNascimento, Mode=TwoWay, Converter={StaticResource DateTimeConverter} }"
+                         Grid.Row="4">
+                </TextBox>
 
                 <TextBlock Grid.Column="2" Grid.Row="3">Email:</TextBlock>
                 <TextBox Grid.Column="2"

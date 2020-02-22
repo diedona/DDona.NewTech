@@ -22,7 +22,7 @@ namespace DDona.NewTech.WpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private PessoaViewModel Pessoa;
+        private PessoaViewModel Pessoa = new PessoaViewModel();
 
         public MainWindow()
         {
@@ -31,7 +31,6 @@ namespace DDona.NewTech.WpfApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Pessoa = new PessoaViewModel();
             grdForm.DataContext = Pessoa;
             txtNomeCompleto.Focus();
         }
@@ -44,6 +43,8 @@ namespace DDona.NewTech.WpfApp
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Pessoa = new PessoaViewModel();
+            grdForm.DataContext = Pessoa;
+            txtNomeCompleto.Focus();
         }
     }
 }

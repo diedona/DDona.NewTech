@@ -9,17 +9,22 @@
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
             <ColumnDefinition Width="7*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
+        <!-- LEFT -->
         <StackPanel x:Name="spMenu" 
                     Orientation="Vertical" 
-                    Background="#CDC"
+                    Background="#EEE"
                     Grid.Column="0">
-            <TextBlock Margin="5">Asd</TextBlock>
-            <TextBlock Margin="5">Asd</TextBlock>
-            <TextBlock Margin="5">Asd</TextBlock>
+            <Button Margin="5">Cadastrar</Button>
         </StackPanel>
+
+        <!-- RIGHT -->
+        <Grid Grid.Column="2">
+            
+        </Grid>
         
     </Grid>
 </Window>

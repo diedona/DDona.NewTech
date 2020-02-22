@@ -17,6 +17,7 @@
         <Setter Property="BorderBrush" Value="#CCC"></Setter>
         <Setter Property="Background" Value="#DDD"></Setter>
         <Setter Property="Foreground" Value="#222"></Setter>
+        <Setter Property="Height" Value="25"></Setter>
         
         <Setter Property="Template">
             <Setter.Value>
@@ -41,9 +42,8 @@
     </Style>
     
     <!---->
-    
+
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}" x:Key="btnLogin">
-        <Setter Property="Height" Value="25"></Setter>
         <Setter Property="Width" Value="80"></Setter>
     </Style>
 </ResourceDictionary>

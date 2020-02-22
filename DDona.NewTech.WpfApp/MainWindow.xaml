@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DDona.NewTech.WpfApp"
-        mc:Ignorable="d"
+        xmlns:converters="clr-namespace:DDona.NewTech.WpfApp.Converters"
+        mc:Ignorable="d"    
         Title="Menu" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Window.Resources>
-        <local:DateTimeConverter x:Key="DateTimeConverter" />
+        <converters:DateConverter x:Key="DateConverter" />
     </Window.Resources>
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
@@ -59,7 +60,7 @@
 
                 <TextBlock Grid.Column="0" Grid.Row="3">Dt. Nascimento:</TextBlock>
                 <TextBox Grid.Column="0" 
-                         Text="{Binding DataNascimento, Mode=TwoWay, Converter={StaticResource DateTimeConverter} }"
+                         Text="{Binding DataNascimento, Mode=TwoWay, Converter={StaticResource DateConverter} }"
                          Grid.Row="4">
                 </TextBox>
 
